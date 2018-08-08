@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style13.css">
+	<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body style="background-color:#f7d199;">
+ <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<center><h3>Aranjeaz&#259; literele &#238;n ordine pentru a forma cuvinte.</h3></center>
+<div class="centered">
+<div id="name">
+	<h3 id="h3o">NCU&#258;</h3>
+
+		<input id="NUCATxt" type="text" maxlength="4">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<div id="name1">
+	<h3 id="h3n">RTCO</h3>
+
+		<input id="CORTTxt" type="text" maxlength="4">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<div id="name">
+	<h3 id="h3o">ASRE</h3>
+
+		<input id="SARETxt" type="text" maxlength="4">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<center><button onclick ="checkIfCorrect()">Verific&#259;</button></center>
+</div>
+<script>
+var ok1=0;
+var ok2=0;
+var ok3 = 0;
+function checkIfCorrect()
+	{
+	
+	var NUCATxt = document.getElementById("NUCATxt").value;
+	var lungime = NUCATxt.length;
+	var NUCATxt1 = NUCATxt.toLowerCase();
+	if (lungime != 0)
+	{
+		if (NUCATxt1 === "nucă" || NUCATxt1 === "nuca")
+		{
+			
+			ok1=1;
+			if(ok1===1 && ok2===1 && ok3 === 1 )
+			{
+				window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+				window.location.href = "set1001.html";
+			}
+			
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var CORTTxt = document.getElementById("CORTTxt").value;
+	var lungime = CORTTxt.length;
+	var CORTTxt1 = CORTTxt.toLowerCase();
+	if (lungime != 0)
+	{
+		if (CORTTxt1 === "cort")
+		{
+			
+			ok2=1;
+			if(ok1===1 && ok2===1 && ok3 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set1001.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var sareTxt = document.getElementById("SARETxt").value;
+	var lungime = sareTxt.length;
+	var sareTxt1 = sareTxt.toLowerCase();
+	if (lungime != 0)
+	{
+		if (sareTxt1 === "sare")
+		{
+			
+			ok3=1;
+			if(ok1===1 && ok2===1 && ok3 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set1001.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	}
+	
+
+</script>
+</body>
+</html>

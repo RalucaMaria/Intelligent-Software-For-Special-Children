@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+<head>
+
+	<title>Prototype version 1.0 Logopedie</title>
+	<style>
+ #last{padding-left:40px;}
+  #first{
+ padding-right: 40px;}
+h3{color:#9842f4;}
+ #td{padding:0px 20px;}
+ #main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<script>
+ var ok1=0;
+ var ok2=0;
+ var ok3=0;
+function checkIfCorrect()
+	{
+	
+	var l1 = document.getElementById("p1");
+	l1.onclick = function(e) {
+	l1.style.color="red";
+	ok1=1;
+	if(ok1===1 && ok2===1 && ok3===1 )
+	{
+	window.location.href = "set12.html";
+	}
+
+	}
+	var l2= document.getElementById("p2");
+	l2.onclick = function(e) {
+	l2.style.color="red";
+	ok2=1;
+	if(ok1===1 && ok2===1 && ok3===1)
+	{
+	window.location.href = "set12.html";
+	}
+
+	}
+	
+	var l3= document.getElementById("p3");
+	l3.onclick = function(e) {
+	l3.style.color="red";
+	ok3=1;
+	if(ok1===1 && ok2===1 && ok3===1 )
+	{
+	window.location.href = "set12.html";
+	}
+	}
+	
+	
+	
+	
+	
+	}
+	
+	 </script>
+<body style="background-color:#fff6a4">
+<div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+	<div id="main">
+	<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+		<thead>
+			<center><h3>Cite&#537;te litera mare &#537;i d&#259; click pe litera mic&#259; de c&#226;te ori o &#238;nt&#226;lne&#537;ti</h3></center>
+		</thead>
+		<tbody>
+			<tr>    
+				<td id="first"><h3>F</h3></td>
+				<td id="td"><p>i</p></td>
+				<td id="td" ><p id="p1" onclick="checkIfCorrect()">f</p> </td>
+				<td id="td"><p>y</p></td>
+				<td id="td"><p>z</p> </td>
+				<td id="td"><p>t</p></td>
+				<td id="td"><p>u</p><td>
+				<td id="td"><p >v</p></td>
+				<td id="td"><p>q</p></td>
+				<td id="td"><p id="p2" onclick="checkIfCorrect()">f</p></td>
+				<td id="td"><p  id="p3" onclick="checkIfCorrect()">f</p></td>
+				<td id="td"><p>v</p></td>
+				<td id="td"><p>s</p></td>
+				<td id="td"><p>&#537;</p></td>
+				<td id="td"><p >g</p></td>
+				<td id="td"><p>t</p></td>
+				<td id="td"><p>v</p></td>
+				<td id="last"><h3>F</h3></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style12+.css">
+	<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body style = "background-color:#cffcef;">
+ <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<center><h3>Completeaz&#259; cuv&#226;ntul cu litera de la sf&#226;r&#537;it: S sau  &#536;.</h3></center>
+<div class="centered">
+<div id="name">
+	<h3 id="h3o">ORA</h3>
+
+		<input id="ORASTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+<div id="name1">
+	<h3 id="h3n">NA</h3>
+
+		<input id="NASTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+<div id="name1">
+	<h3 id="h3n">UR</h3>
+
+		<input id="ursTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+
+<div id="name1">
+	<h3 id="h3n">CO</h3>
+
+		<input id="cosTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+<div id="name1">
+	<h3 id="h3n1">COCO</h3>
+
+		<input id="cocosTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+<div id="name1">
+	<h3 id="h3n2">ANANA</h3>
+
+		<input id="ananasTxt" type="text" maxlength="1">
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<center><button onclick ="checkIfCorrect()">Verific&#259;</button></center>
+</div>
+<script>
+var ok1=0;
+var ok2=0;
+var ok3 = 0 ;
+var ok4 = 0;
+var ok5 = 0;
+var ok6 = 0;
+
+function checkIfCorrect()
+	{
+	
+	var ORAS = document.getElementById("ORASTxt").value;
+	var lungime = ORAS.length;
+	var ORAS1 = ORAS.toLowerCase();
+	if (lungime != 0)
+	{
+		if (ORAS1 === "ș")
+		{
+			
+			ok1=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+				window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+				window.location.href = "set10.html";
+			}
+			
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var v = document.getElementById("cosTxt").value;
+	var lungime = v.length;
+	var v1 = v.toLowerCase();
+	if (lungime != 0)
+	{
+		if (v1 === "ș")
+		{
+		
+			ok2=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+				window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+				window.location.href = "set10.html";
+			}
+			
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var a = document.getElementById("cocosTxt").value;
+	var lungime = a.length;
+	var a1 = a.toLowerCase();
+	if (lungime != 0)
+	{
+		if (a1 === "ș" || a1 === "s")
+		{
+			
+			ok3=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+				window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+				window.location.href = "set10.html";
+			}
+			
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var nas = document.getElementById("NASTxt").value;
+	var lungime = nas.length;
+	var nas1 = nas.toLowerCase();
+	if (lungime != 0)
+	{
+		if (nas1 === "s")
+		{
+			
+			ok4=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set10.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	
+	var urs = document.getElementById("ursTxt").value;
+	var lungime = urs.length;
+	var urs1 = urs.toLowerCase();
+	if (lungime != 0)
+	{
+		if (urs1 === "s")
+		{
+			
+			ok5=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set10.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	
+	var ananas = document.getElementById("ananasTxt").value;
+	var lungime = ananas.length;
+	var ananas1 = ananas.toLowerCase();
+	if (lungime != 0)
+	{
+		if (ananas1 === "s")
+		{
+			
+			ok6=1;
+			if(ok1===1 && ok2===1 && ok3 ===1 && ok4 === 1 && ok5 === 1 && ok6 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set10.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	}
+
+	
+	
+	
+</script>
+</body>
+</html>

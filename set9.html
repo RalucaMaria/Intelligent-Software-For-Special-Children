@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style12.css">
+	<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body style="background-color:#cc748e;">
+ <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+ <div class="centered">
+<center><h3>Completeaz&#259; cuv&#226;ntul cu litera lips&#259; : P sau B.</h3></center>
+<div id="name" align="center">
+		<input id="paraTxt" type="text" maxlength="1">
+		<h3 id="h3o">AR&#258;</h3>
+	
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<div id="name1" align="center">
+	
+		<input id="patTxt" type="text" maxlength="1">
+		<h3 id="h3n">AT</h3>
+
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+
+<div id="name2" align="center">
+	
+		<input id="becTxt" type="text" maxlength="1">
+		<h3 id="h3n">EC</h3>
+
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<div id="name3" align="center">
+	
+		<input id="bobTxt" type="text" maxlength="1">
+		<h3 id="h3n">OB</h3>
+
+	<!--button onclick ="checkIfCorrect()">Verific&#259;</button-->
+</div>
+<center><button onclick ="checkIfCorrect()">Verific&#259;</button></center>
+</div>
+<script>
+var ok1=0;
+var ok2=0;
+var ok3=0;
+var ok4=0;
+	
+		function checkIfCorrect()
+	{
+	
+	
+	var OS = document.getElementById("patTxt").value;
+	var lungime = OS.length;
+	var os = OS.toLowerCase();
+	if (lungime != 0)
+	{
+		if (os === "p")
+		{
+			ok1=1;
+			if(ok1=== 1 && ok2=== 1 && ok3 === 1 && ok4 === 1 )
+			{
+				window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+				window.location.href = "set901.html";
+			}
+			
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	
+	
+	
+	
+	var URIAS = document.getElementById("paraTxt").value;
+	var lungime = URIAS.length;
+	var URIAS1 = URIAS.toLowerCase();
+	if (lungime != 0)
+	{
+		if (URIAS1 === "p" ||URIAS1 === "b" )
+		{
+			
+			ok2=1;
+			if(ok1===1 && ok2===1 && ok3 === 1 && ok4 === 1 )
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set901.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var bec = document.getElementById("becTxt").value;
+	var lungime = bec.length;
+	var bec1 = bec.toLowerCase();
+	if (lungime != 0)
+	{
+		if (bec1 === "b")
+		{
+			
+			ok3=1;
+			if(ok1=== 1 && ok2=== 1 && ok3 === 1 && ok4 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");	
+			window.location.href = "set901.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	var bob = document.getElementById("bobTxt").value;
+	var lungime = bob.length;
+	var bob1 = bob.toLowerCase();
+	if (lungime != 0)
+	{
+		if (bob1 === "b")
+		{
+			ok4=1;
+			if(ok1=== 1 && ok2=== 1 && ok3 === 1 && ok4 === 1)
+			{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set901.html";
+			}
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ!!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISĂ ÎN CĂSUȚA !");
+	}
+	
+	
+	}
+	
+</script>
+</body>
+</html>

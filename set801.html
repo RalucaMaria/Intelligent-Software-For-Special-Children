@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+   <!--link rel="stylesheet" href="style.css"-->
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body style="background-color:#eaf7bb;">
+ <script>
+	function checkIfCorrect()
+	{
+	var mar = document.getElementById("umbrelaImg");
+	mar.onclick = function(e) {
+	window.alert( "BRAVO ! AI RASPUNS CORECT! ");
+	window.location.href = "set802.html";
+	
+}
+	var foarfeca = document.getElementById("plajaImg");
+	foarfeca.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	
+	}
+
+   </script>
+  <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div>  
+<table border="0" cellpadding="1" cellspacing="1" align="center">
+<thead>
+ <br><center><h3>Asocieri. Cui &#238;i apar&#539;ine obiectul? D&#259; click pe imagine.</h3></center><br><br>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 400px; height:400px;" colspan = "2"  align="center"><img  id="colacImg" src="images/umbrela.jpg" width="300px",height="300px"></td>
+</tr>
+<tr>
+<td><img src="images/copil_plaja.jpg" id="plajaImg" onclick="checkIfCorrect()"  width="300px",height="300px"></td>
+<td><img src="images/copil_umbrela.jpg" id="umbrelaImg" onclick="checkIfCorrect()"  width="300px",height="300px"></td>
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>

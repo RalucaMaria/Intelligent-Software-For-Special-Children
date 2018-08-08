@@ -1,0 +1,76 @@
+h3 {
+	display: inline-block;
+	width: 800px;
+	text-align : center;
+}
+
+#main{
+	
+	width: 800px;
+	margin: 0 auto;
+	
+}
+
+#nameP
+{
+	padding-top : 20%;
+	width: 200px;
+    height: 400px;
+    float: left;
+}
+
+#nameC
+{
+	padding-top : 20%;
+	width: 200px;
+    height: 400px;
+    margin-left: 600px;
+}
+
+body 
+{
+	background-color : #d7c797; /*#ffb2b2;*/
+}
+
+#body3
+{
+	background-color : #add8e6;
+}
+
+#body4
+{
+	background-color : #acfb8a;
+}
+
+#body5
+{
+	background-color : #ffda6b;
+}
+
+#nameinput {
+	box-sizing: border-box;
+	background-image: url("images/circle3.png");
+	background-size: 60px;
+	height: 60px;
+	padding-left: 7px;
+	display: inline-block;
+}
+
+#nameinput {
+	width: 60px;
+}
+
+input {
+	background: none;
+ 	display: block;
+ 	width: inherit;
+  	padding: 3px 0 0;
+  	border: none;
+  	font-family: monospace;
+  	font-size: 20px;
+  	letter-spacing: 14px;
+}
+
+input:focus {
+	outline: none;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body bgcolor="lightblue">
+ <script>
+ /*
+  function playCeas()
+  {
+       var audioToba = document.getElementById("audioCeas");
+       audioToba.play();
+	}
+	
+	function playScaun(){
+        
+       var audioFoarfeca = document.getElementById("audioScaun");  
+	   audioFoarfeca.play();
+    }
+	function playMinge(){
+       var audioMar = document.getElementById("audioMinge");
+	   audioMar.play();
+	   }
+	   
+	function checkIfCorrect()
+	{
+		var minge = document.getElementById("mingeImg");
+		minge.onclick = function(e) {
+		window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+		window.location.href = "set102.html";
+	
+}
+	var scaun = document.getElementById("scaunImg");
+	scaun.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	var ceas = document.getElementById("ceasImg");
+	ceas.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+		
+	}
+	*/
+	$(document).ready(function(){
+	$('#mingeImg').on('click',function(){
+	window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+	window.location.href = "set102.html";
+	});
+	
+	$('#ceasImg').on('click',function(){
+	window.alert( "MAI ÎNCEARCĂ! " );
+	});
+	$('#scaunImg').on('click',function(){
+	window.alert( "MAI ÎNCEARCĂ! " );
+	});
+	
+	$('#imgC').on('click',function(){
+	var audioToba = $('#audioCeas')[0];
+	  audioToba.play();
+	});
+	
+		
+	$('#imgM').on('click',function(){
+	var audioFoarfeca = $('#audioMinge')[0];
+	 audioFoarfeca.play();
+	});
+	
+	$('#imgS').on('click',function(){
+	var audioMar = $('#audioScaun')[0];
+	 audioMar.play();
+	});
+	
+	});
+   </script>
+<div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div>    
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br>Arată <b>MINGEA</b><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="ceasImg" src="images/ceas.png"></td>
+<td style="width: 300px"><img  id="mingeImg" src="images/minge.png"></td>
+<td style="width: 300px"><img  id="scaunImg" src="images/scaun.png"></td>
+
+</tr>
+<tr>
+<td><img src="images/audioBtn.png" id="imgC" onclick="playCeas()" height="50" width="50">
+<audio id="audioCeas" src="audios/ceas.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="imgM" onclick="playMinge()" height="50" width="50">
+<audio id="audioMinge" src="audios/minge.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="imgS" onclick="playScaun()" height="50" width="50">
+<audio id="audioScaun" src="audios/scaun.m4a" ></audio></td>
+
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>
