@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+   <link rel="stylesheet" href="style.css">
+<title>Prototype version 1.0 Logopedie</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+ <body bgcolor="lightblue">
+ <script>
+ /*
+  function playColac()
+  {
+       var audioToba = document.getElementById("audioColac");
+       audioToba.play();
+	}
+	
+	function playCopac(){
+        
+       var audioFoarfeca = document.getElementById("audioCopac");  
+	   audioFoarfeca.play();
+    }
+	function playCreion(){
+       var audioMar = document.getElementById("audioCreion");
+	   audioMar.play();
+	   }
+	   
+	function checkIfCorrect()
+	{
+		var minge = document.getElementById("copacImg");
+		minge.onclick = function(e) {
+		window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+		window.location.href = "set2.html";
+	
+}
+	var scaun = document.getElementById("colacImg");
+	scaun.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	var ceas = document.getElementById("creionImg");
+	ceas.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+		
+	}
+	//checkIfCorrect();
+	*/
+		$(document).ready(function(){
+	$('#copacImg').on('click',function(){
+	window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+	window.location.href = "set2.html";
+	});
+	
+	$('#colacImg').on('click',function(){
+	window.alert( "MAI ÎNCEARCĂ! " );
+	});
+	$('#creionImg').on('click',function(){
+	window.alert( "MAI ÎNCEARCĂ! " );
+	});
+	
+	$('#imgCo').on('click',function(){
+	var audioToba = $('#audioColac')[0];
+	  audioToba.play();
+	});
+	
+		
+	$('#imgCp').on('click',function(){
+	var audioFoarfeca = $('#audioCopac')[0];
+	 audioFoarfeca.play();
+	});
+	
+	$('#imgCr').on('click',function(){
+	var audioMar = $('#audioCreion')[0];
+	 audioMar.play();
+	});
+	
+	});
+   </script>
+ <div align="left">
+ <a href="../index.html"><img src="../../arrow.png" height="50" width="70"></a>
+</div>   
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br>Arată <b>COPACUL</b><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="colacImg" src="../../images/colac.png"></td>
+<td style="width: 300px"><img  id="copacImg" src="../../images/copac.png"></td>
+<td style="width: 300px"><img  id="creionImg" src="../../images/creion.png" height="200" width="200" ></td>
+
+</tr>
+<tr>
+<td><img src="../../images/audioBtn.png" id="imgCo" onclick="playColac()" height="50" width="50">
+<audio id="audioColac" src="../../audios/colac.m4a" ></audio></td>
+<td><img src="../../images/audioBtn.png" id="imgCp" onclick="playCopac()" height="50" width="50">
+<audio id="audioCopac" src="../../audios/copac.m4a" ></audio></td>
+<td><img src="../../images/audioBtn.png" id="imgCr" onclick="playCreion()" height="50" width="50">
+<audio id="audioCreion" src="../../audios/creion.m4a" ></audio></td>
+
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>

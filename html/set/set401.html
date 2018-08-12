@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Prototype version 1.0 Logopedie</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="body3">
+<div align="left">
+ <a href="../index.html"><img src="../../arrow.png" height="50" width="70"></a>
+</div> 
+<div id="main">
+<h3>Cu ce sunet &#238;ncepe cuv&#226;ntul? Scrie &#238;n cercule&#539;.</h3>
+<div id="nameP" align="center">
+	<img src="../../images/dulap.png"/ width = "250px" height = "350px"><br>
+	<div id="nameinput" align="center">
+	<br>
+	<input id="dulapTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button>Verific&#259;</button>
+	<div align="center">
+		<img src="../../images/audioBtn.png" id="img1"  width="30px" height="30px">
+		<audio id="audioDulap" src="../../audios/dulap.m4a" ></audio>
+	</div>
+</div>
+
+<div id="nameC" align="center">
+	<img src="../../images/avion.png"/  width = "400px" height = "350px"><br>
+	<div id="nameinput" align="center">
+		<br>
+		<input id="avionTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button >Verific&#259;</button>
+	<div align="center">
+		<img src="../../images/audioBtn.png" id="img2"  width="30px" height="30px">
+		<audio id="audioAvion" src="../../audios/avion.m4a"></audio>
+	</div>
+</div>
+</div>
+
+<script>
+/*
+ function playDulap()
+  {
+       var audioDulap = document.getElementById("audioDulap");
+       audioDulap.play();
+	}
+	
+	 function playAvion()
+  {
+       var audioAvion = document.getElementById("audioAvion");
+       audioAvion.play();
+	}
+	
+
+function checkIfCorrect()
+	{
+	
+	var dulap = document.getElementById("dulapTxt").value;
+	var lungime1 = dulap.length;
+	var dulapior = dulap.toLowerCase();
+	var avion = document.getElementById("avionTxt").value;
+	var lungime2 = avion.length;
+	var avionas = avion.toLowerCase();
+	if (lungime1 != 0 && lungime2 != 0)
+	{
+		if (dulapior === "d" && avionas === "a")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set403.html";
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ! HINT: APASĂ PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("LITERA TREBUIE SCRISĂ ÎN CERCULEȚUL DE SUB IMAGINE!");
+	}
+	}
+	*/
+	$(document).ready(function(){
+	
+	$('#img1').on('click',function(){
+	var audioDulap = $('#audioDulap')[0];
+	 audioDulap.play();
+	});
+	$('#img2').on('click',function(){
+	var audioAvion = $('#audioAvion')[0];
+	 audioAvion.play();
+	});
+	
+		$('button').on('click',function(){
+	var dulap = $("#dulapTxt").val();
+	var lungime1 = dulap.length;
+	var dulapior = dulap.toLowerCase();
+	var avion = $("#avionTxt").val();
+	var lungime2 = avion.length;
+	var avionas = avion.toLowerCase();
+	if (lungime1 != 0 && lungime2 != 0)
+	{
+		if (dulapior === "d" && avionas === "a")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set402.html";
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ! HINT: APASĂ PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("LITERA TREBUIE SCRISĂ ÎN CERCULEȚUL DE SUB IMAGINE!");
+	}
+	});
+	
+	});
+</script>
+</body>
+</html>

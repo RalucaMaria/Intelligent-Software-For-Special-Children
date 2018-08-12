@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Prototype version 1.0 Logopedie</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="body4">
+<div align="left">
+ <a href="../index.html"><img src="../../arrow.png" height="50" width="70"></a>
+</div> 
+<div id="main">
+<h3>Cu ce sunet &#238;ncepe cuv&#226;ntul? Scrie &#238;n cercule&#539;.</h3>
+<div id="nameP" align="center">
+	<img src="../../images/morcov.png"/ width = "400px" height = "200px"><br>
+	<div id="nameinput" align="center">
+	<br>
+	<input id="morcovTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button>Verific&#259;</button>
+	<div align="center">
+		<img src="../../images/audioBtn.png" id="img1"  width="30px" height="30px">
+		<audio id="audioMorcov" src="../../audios/morcov.m4a" ></audio>
+	</div>
+</div>
+
+<div id="nameC" align="center">
+	<img src="../../images/camion.png"/  width = "400px" height = "200px"><br>
+	<div id="nameinput" align="center">
+		<br>
+		<input id="camionTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button>Verific&#259;</button>
+	<div align="center">
+		<img src="../../images/audioBtn.png" id="img2"  width="30px" height="30px">
+		<audio id="audioCamion" src="../../audios/camion.m4a"></audio>
+	</div>
+</div>
+</div>
+
+<script>
+/*
+ function playMorcov()
+  {
+       var audioMorcov = document.getElementById("audioMorcov");
+       audioMorcov.play();
+	}
+	
+	 function playCamion()
+  {
+       var audioCamion = document.getElementById("audioCamion");
+       audioCamion.play();
+	}
+	
+
+function checkIfCorrect()
+	{
+	
+	var morcov = document.getElementById("morcovTxt").value;
+	var lungime1 = morcov.length;
+	var morcovel = morcov.toLowerCase();
+	var  camion= document.getElementById("camionTxt").value;
+	var lungime2 = camion.length;
+	var camionas = camion.toLowerCase();
+	if (lungime1 != 0 && lungime2 != 0)
+	{
+		if (morcovel === "m" && camionas === "c")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set403.html";
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ! HINT: APASĂ PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("LITERA TREBUIE SCRISĂ ÎN CERCULEȚUL DE SUB IMAGINE!");
+	}
+	}
+	*/
+		$(document).ready(function(){
+	
+	$('#img1').on('click',function(){
+	var audioMorcov = $('#audioMorcov')[0];
+	 audioMorcov.play();
+	});
+	$('#img2').on('click',function(){
+	var audioCamion = $('#audioCamion')[0];
+	 audioCamion.play();
+	});
+	
+		$('button').on('click',function(){
+	var morcov = $("#morcovTxt").val();
+	var lungime1 = morcov.length;
+	var morcovel = morcov.toLowerCase();
+	var  camion= $("#camionTxt").val();
+	var lungime2 = camion.length;
+	var camionas = camion.toLowerCase();
+	if (lungime1 != 0 && lungime2 != 0)
+	{
+		if (morcovel === "m" && camionas === "c")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set403.html";
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ! HINT: APASĂ PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("LITERA TREBUIE SCRISĂ ÎN CERCULEȚUL DE SUB IMAGINE!");
+	}
+	});
+	
+	});
+</script>
+</body>
+</html>

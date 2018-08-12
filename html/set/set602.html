@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+ 
+<title>Prototype version 1.0 Speech Therapist's View</title>
+<style>
+ #tdl{padding-left:180px;
+ /*padding-right: 180px;*/}
+  #tdr{/*padding-left:180px;*/
+ padding-right: 180px;}
+   #td{/*padding-left:240px;*/
+ padding-right: 110px;}
+  #main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+ <body style="background-color: #e8c9df">
+ <script>
+ var ok1=0;
+ var ok2=0;
+ var ok3=0;
+ var ok4=0;
+ function checkIfCorrect()
+	{
+	
+	var c1 = document.getElementById("c1");
+	c1.onclick = function(e) {
+	var c6 = document.getElementById("c6");
+	c6.onclick = function(e) {
+	c1.style.display='none';
+	c6.style.display='none';
+
+	ok1=1;
+	
+	if(ok1===1 && ok2===1 && ok3===1 && ok4===1)
+	{
+	window.location.href = "set7.html";
+	}
+	}
+
+	}
+	
+		
+	
+	var c3 = document.getElementById("c3");
+	c3.onclick = function(e) {
+	var c2 = document.getElementById("c2");
+	c2.onclick = function(e) {
+	c3.style.display='none';
+	c2.style.display='none';
+	
+	ok2=1;
+	if(ok1===1 && ok2===1 && ok3===1 && ok4===1)
+	{
+	window.location.href = "set7.html";
+	}
+	}
+	}
+	
+	var c5 = document.getElementById("c5");
+	c5.onclick = function(e) {
+	var c8 = document.getElementById("c8");
+	c8.onclick = function(e) {
+	c5.style.display='none';
+	c8.style.display='none';
+
+
+	ok3=1;
+	if(ok1===1 && ok2===1 && ok3===1 && ok4===1)
+	{
+	window.location.href = "set7.html";
+	}
+	}
+	}
+	
+	
+	var c7 = document.getElementById("c7");
+	c7.onclick = function(e) {
+	var c4 = document.getElementById("c4");
+	c4.onclick = function(e) {
+	c4.style.display='none';
+	c7.style.display='none';
+	ok4=1;
+	if(ok1===1 && ok2===1 && ok3===1 && ok4===1)
+	{
+	window.location.href = "set7.html";
+	}
+	}
+
+	}
+	
+	}
+		 
+	
+   </script>
+   <div align="left">
+ <a href="../index.html"><img src="../../arrow.png" height="50" width="70"></a>
+</div> 
+ <div id="main">   
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+ <center><h3>D&#259; click pe cuvintele scrise cu litere mari cu acelea&#351;i cuvinte scrise cu litere mici.</h3></center>
+</thead>
+<tbody>       
+<tr>
+<td id="td"style="width: 200px"><p id="c1" onclick="checkIfCorrect()">LEU<p></td>
+<td id="td"><p id="c3" onclick="checkIfCorrect()">M&#258;R<p></td>
+<td id="td"><p id="c5" onclick="checkIfCorrect()">FOC<p></td>
+<td id="td" style="width: 200px"><p id="c7" onclick="checkIfCorrect()">PAI<p></td>
+</tr>
+<tr>
+<td style="width: 200px"><p id="c2" onclick="checkIfCorrect()">m&#259;r<p></td>
+<td style="width: 200px"><p id="c4" onclick="checkIfCorrect()">pai<p></td>
+<td style="width: 200px"><p id="c6" onclick="checkIfCorrect()">leu<p></td>
+<td style="width: 200px"><p id="c8" onclick="checkIfCorrect()">foc<p></td>
+</tr>
+</tbody>
+</table>
+</div>
+ </body>
+ </html>

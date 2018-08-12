@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+<title>Prototype version 1.0 Logopedie</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+ <body bgcolor="lightgreen">
+ <script>
+ /*
+  function playCana()
+  {
+       var audioToba = document.getElementById("audioCana");
+       audioToba.play();
+	}
+	function checkIfCorrect()
+	{
+	
+	var gura = document.getElementById("canaTxt").value;
+	var lungime = gura.length;
+	var gurita = gura.toLowerCase();
+	if (lungime != 0)
+	{
+		if (gurita === "cana"  || gurita === "cană")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set204.html";
+		}
+		else 
+		{
+			window.alert("MAI INCEARCA! HINT: APASA PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISA IN CASUTA DE SUB IMAGINE!");
+	}
+	}
+	*/
+$(document).ready(function(){
+	
+	$('#img').on('click',function(){
+	var audioCana = $('#audioCana')[0];
+	 audioCana.play();
+	});
+	
+		$('button').on('click',function(){
+	var cana = $("#canaTxt").val();
+	var lungime = cana.length;
+	var canita = cana.toLowerCase();
+	if (lungime != 0)
+	{
+		if (canita === "cana"  || canita === "cană")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set204.html";
+		}
+		else 
+		{
+			window.alert("MAI INCEARCA! HINT: APASA PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISA IN CASUTA DE SUB IMAGINE!");
+	}
+	});
+	
+	});
+
+   </script>
+<div align="left">
+ <a href="../index.html"><img src="../../arrow.png" height="50" width="70"></a>
+</div>    
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br><h3>Scrie denumirea sub fiecare imagine</h3><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="masaImg" src="../../images/cana.png"></td>
+</tr>
+<td><img src="../../images/audioBtn.png" id="img" onclick="playCana()" "height="50" width="50">
+<audio id="audioCana" src="../../audios/cana.m4a" ></audio><input  id="canaTxt" type="text" autocomplete="off"><button>Verific&#259;</button></td>
+</tbody>
+</table>
+ </body>
+ </html>
