@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>HTML,CSS& JS drag and drop</title>
+	<style type = "text/css">
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	.dropzone1
+	{
+		height: 350px;
+		width: 40%;
+		border: 2px solid black;
+		float: left;
+		margin-top: 50px;
+		margin-left: 7%;
+	}
+	
+	.dragzone1
+	{
+		height: 600px;
+		width : 600px;
+		border: 2px solid black;
+		float: left;
+		margin-top: 150px;
+		margin-left: 7%;
+	}
+	.dropzone2
+	{
+		height: 350px;
+		width: 40%;
+		border: 2px solid black;
+		float: left;
+		margin-top: 100px;
+		margin-left: 7%;
+	}	
+	
+	
+	.dragzone1
+	{
+		background: rgb(255,240,174,0.9);
+	}
+	
+	.dropzone2
+	{
+		background: rgba(212, 0, 18, 0.7)
+	}
+	
+	.dropzone1
+	{
+		background: rgba(0, 53, 170, 0.5)
+	}
+	
+	body
+	{
+		background-color: #add8e6;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="dragzone1">
+		<img src = "dreptunghi.png" id = "dragElement1" height = "200px" width = "100px" ondragstart = "dragStart(event)">
+		<img src = "dreptunghiR.png" id = "dragElement5" height = "200px" width = "100px" ondragstart = "dragStart(event)">
+		<img src = "cerc.png" id = "dragElement2" height = "200px" width = "200px" ondragstart = "dragStart(event)">
+		<img src = "stea.png" id = "dragElement3" height = "200px" width = "200px" ondragstart = "dragStart(event)">
+		<img src = "steaR.png" id = "dragElement7" height = "200px" width = "200px" ondragstart = "dragStart(event)">
+		<img src = "poligonR.png" id = "dragElement8" height = "200px" width = "180px" ondragstart = "dragStart(event)">
+		<img src = "poligon.png" id = "dragElement4" height = "200px" width = "180px" ondragstart = "dragStart(event)">
+		<img src = "cercC.png" id = "dragElement6" height = "200px" width = "200px" ondragstart = "dragStart(event)">
+		
+	</div>
+	
+	<div class = "dropzone1" ondragover="allowDrop(event)" ondrop = "drop_1(event)">	
+	</div>
+	
+	<div class="dropzone2" ondragover="allowDrop(event)" ondrop = "drop_2(event)">
+	</div>
+<script type = "text/javascript" src = "index.js"></script>
+	
+</body>
+</html>
