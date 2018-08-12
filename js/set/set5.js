@@ -45,5 +45,37 @@ function playBanana()
 
 
 $(document).ready(function(){
-    console.log("active jquery")
+    var firstClick, secondClick;
+
+    $(".left").on('click', function(){
+        if(firstClick == undefined)
+        {
+            firstClick = $(this).attr('attr-letter');
+        }
+        else
+        {
+            alert("selecteaza te rog din coloana din dreapta")
+        }
+    })
+
+    $(".right").on('click', function(){
+        if(secondClick == undefined)
+        {
+            secondClick = $(this).attr('attr-letter');
+        }
+
+        if(firstClick === secondClick)
+        {
+            alert("Bun");
+            firstClick = undefined;
+            secondClick = undefined;
+        }
+        else
+        {
+            alert("mai incearca");
+            secondClick = undefined;
+        }
+
+
+    })
 })
