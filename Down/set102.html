@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+   <link rel="stylesheet" href="style.css">
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body bgcolor="lightblue">
+ <script>
+  function playColac()
+  {
+       var audioToba = document.getElementById("audioColac");
+       audioToba.play();
+	}
+	
+	function playCopac(){
+        
+       var audioFoarfeca = document.getElementById("audioCopac");  
+	   audioFoarfeca.play();
+    }
+	function playCreion(){
+       var audioMar = document.getElementById("audioCreion");
+	   audioMar.play();
+	   }
+	   
+	function checkIfCorrect()
+	{
+		var minge = document.getElementById("copacImg");
+		minge.onclick = function(e) {
+		window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+		window.location.href = "set2.html";
+	
+}
+	var scaun = document.getElementById("colacImg");
+	scaun.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	var ceas = document.getElementById("creionImg");
+	ceas.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+		
+	}
+	//checkIfCorrect();
+   </script>
+ <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div>   
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br>Arată <b>COPACUL</b><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="colacImg" src="images/colac.png" onclick="checkIfCorrect()"></td>
+<td style="width: 300px"><img  id="copacImg" src="images/copac.png" onclick = "checkIfCorrect()"></td>
+<td style="width: 300px"><img  id="creionImg" src="images/creion.png" onclick="checkIfCorrect()" height="200" width="200" ></td>
+
+</tr>
+<tr>
+<td><img src="images/audioBtn.png" id="img" onclick="playColac()" height="50" width="50">
+<audio id="audioColac" src="audios/colac.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="img" onclick="playCopac()" height="50" width="50">
+<audio id="audioCopac" src="audios/copac.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="img" onclick="playCreion()" height="50" width="50">
+<audio id="audioCreion" src="audios/creion.m4a" ></audio></td>
+
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>

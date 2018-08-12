@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body bgcolor="lightgreen">
+ <script>
+  function playMasa()
+  {
+       var audioToba = document.getElementById("audioMasa");
+       audioToba.play();
+	}
+	function checkIfCorrect()
+	{
+	
+	var gura = document.getElementById("masaTxt").value;
+	var lungime = gura.length;
+	var gurita = gura.toLowerCase();
+	if (lungime != 0)
+	{
+		if (gurita === "masa"  || gurita === "masă")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set203.html";
+		}
+		else 
+		{
+			window.alert("MAI INCEARCA! HINT: APASA PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISA IN CASUTA DE SUB IMAGINE!");
+	}
+	}
+
+   </script>
+<div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div>    
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br><h3>Scrie denumirea sub fiecare imagine</h3><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="masaImg" src="images/masa.png" onclick ="checkIfCorrect()"></td>
+</tr>
+<td><img src="images/audioBtn.png" id="img" onclick="playMasa()" "height="50" width="50">
+<audio id="audioMasa" src="audios/masa.m4a" ></audio><input  id="masaTxt" type="text" autocomplete="off"><button onclick ="checkIfCorrect()">Verific&#259;</button></td>
+</tbody>
+</table>
+ </body>
+ </html>

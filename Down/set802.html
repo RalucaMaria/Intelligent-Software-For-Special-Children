@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body style="background-color:#eaf7bb;">
+ <script>
+	function checkIfCorrect()
+	{
+	var mar = document.getElementById("periutaImg");
+	mar.onclick = function(e) {
+	window.alert( "BRAVO ! AI RASPUNS CORECT! ");
+	window.location.href = "set9.html";
+	
+}
+	var foarfeca = document.getElementById("papusaImg");
+	foarfeca.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	
+	}
+
+   </script>
+   <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<table border="0" cellpadding="1" cellspacing="1" align="center">
+<thead>
+ <br><center><h3>Asocieri. Cui &#238;i apar&#539;ine obiectul? D&#259; click pe imagine.</h3></center><br><br>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 400px; height:400px;" colspan = "2"  align="center"><img  id="colacImg" src="images/periuta.jpg" width="300px",height="300px"></td>
+</tr>
+<tr>
+<td><img src="images/copil_periuta.jpg" id="periutaImg" onclick="checkIfCorrect()"  width="400px",height="400px"></td>
+<td><img src="images/copil_papusa.jpg" id="papusaImg" onclick="checkIfCorrect()"  width="400px",height="400px"></td>
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>

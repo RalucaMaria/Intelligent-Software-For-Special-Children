@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+   <link rel="stylesheet" href="style.css">
+<title>Prototype version 1.0 Logopedie</title>
+</head>
+ <body bgcolor="lightblue">
+ <script>
+  function playToba()
+  {
+       var audioToba = document.getElementById("audioToba");
+       audioToba.play();
+	}
+	
+	function playFoarfeca(){
+        
+       var audioFoarfeca = document.getElementById("audioFoarfeca");  
+	   audioFoarfeca.play();
+    }
+	function playMar(){
+       var audioMar = document.getElementById("audioMar");
+	   audioMar.play();
+	   }
+	function checkIfCorrect()
+	{
+	var mar = document.getElementById("marImg");
+	mar.onclick = function(e) {
+	window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+	window.location.href = "set101.html";
+	
+}
+	var foarfeca = document.getElementById("foarfecaImg");
+	foarfeca.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	var toba = document.getElementById("tobaImg");
+	toba.onclick = function(e)
+	{
+		window.alert( "MAI ÎNCEARCĂ! " );
+	}
+	
+	}
+
+   </script>
+ <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><br><br><br>Arată <b>MĂRUL</b><br><br><br></center>
+</thead>
+<tbody>       
+<tr>
+<td style="width: 300px"><img  id="tobaImg" src="images/toba.png" onclick ="checkIfCorrect()"></td>
+<td style="width: 300px"><img  id="foarfecaImg" src="images/foarfeca.png" onclick ="checkIfCorrect()"></td>
+<td style="width: 300px"><img  id="marImg" src="images/mar.png" onclick ="checkIfCorrect()"></td>
+</tr>
+<tr>
+<td><img src="images/audioBtn.png" id="img" onclick="playToba()" height="50" width="50">
+<audio id="audioToba" src="audios/toba.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="img" onclick="playFoarfeca()" height="50" width="50">
+<audio id="audioFoarfeca" src="audios/foarfeca.m4a" ></audio></td>
+<td><img src="images/audioBtn.png" id="img" onclick="playMar()" height="50" width="50">
+<audio id="audioMar" src="audios/mar.m4a" ></audio></td>
+</tr>
+</tbody>
+</table>
+ </body>
+ </html>

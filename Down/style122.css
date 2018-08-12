@@ -1,0 +1,43 @@
+#h3o {
+	display: inline-block;
+	width: 20px;
+}
+#h3n {
+	display: inline-block;
+	width: 50px;
+}
+#URIASTxt,#OSTxt {
+	box-sizing: border-box;
+	background-image: url("square.png");
+	background-size: 25px;
+	height: 25px;
+	padding-left: 7px;
+	display: inline-block;
+}
+
+#URIASTxt,#OSTxt {
+	width: 25px;
+}
+
+input {
+	background: none;
+ 	display: block;
+ 	width: inherit;
+  	padding: 3px 0 0;
+  	border: none;
+  	font-family: monospace;
+  	font-size: 20px;
+  	letter-spacing: 14px;
+	text-align:center;
+}
+
+input:focus {
+	outline: none;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}

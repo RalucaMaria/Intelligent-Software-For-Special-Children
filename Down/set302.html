@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style302.css">
+	<title>Prototype version 1.0 Logopedie</title>
+</head>
+<body style="background-color : #b4c46f;">
+<div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<div id="name" align="center" >
+	<img src="images/rata.png"/><br>
+	<h3>R</h3>
+	<div id="nameinput">
+		<input id="rataTxt" type="text" maxlength="3">
+	</div>
+	<button onclick ="checkIfCorrect()">Verific&#259;</button>
+</div>
+
+<script>
+function checkIfCorrect()
+	{
+	
+	var cal = document.getElementById("rataTxt").value;
+	var lungime = cal.length;
+	var calut = cal.toLowerCase();
+	if (lungime != 0)
+	{
+		if (calut === "ata" || calut === "ață")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set303.html";
+		}
+		else 
+		{
+			window.alert("MAI INCEARCA!");
+		}
+	}
+	else 
+	{
+		window.alert("DENUMIREA TREBUIE SCRISA IN CASUTA DE SUB IMAGINE!");
+	}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title>Prototype version 1.0 Logopedie</title>
+</head>
+<body id="body5">
+<div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<div id="main">
+<h3>Cu ce sunet &#238;ncepe cuv&#226;ntul? Scrie &#238;n cercule&#539;.</h3>
+<div id="nameP" align="center">
+	<img src="images/zebra.png"/ width = "300px" height = "300px"><br>
+	<div id="nameinput" align="center">
+	<br>
+	<input id="zebraTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button onclick ="checkIfCorrect()">Verific&#259;</button>
+	<div align="center">
+		<img src="images/audioBtn.png" id="img" onclick="playZebra()" width="30px" height="30px">
+		<audio id="audioZebra" src="audios/zebra.m4a" ></audio>
+	</div>
+</div>
+
+<div id="nameC" align="center">
+	<img src="images/galeata.png"/  width = "250px" height = "300px"><br>
+	<div id="nameinput" align="center">
+		<br>
+		<input id="galeataTxt" type="text" maxlength="1" style = "text-align:center">
+	</div>
+	<button onclick ="checkIfCorrect()">Verific&#259;</button>
+	<div align="center">
+		<img src="images/audioBtn.png" id="img" onclick="playGaleata()" width="30px" height="30px">
+		<audio id="audioGaleata" src="audios/galeata.m4a"></audio>
+	</div>
+</div>
+</div>
+
+<script>
+
+ function playZebra()
+  {
+       var audioZebra = document.getElementById("audioZebra");
+       audioZebra.play();
+	}
+	
+	 function playGaleata()
+  {
+       var audioGaleata = document.getElementById("audioGaleata");
+       audioGaleata.play();
+	}
+	
+
+function checkIfCorrect()
+	{
+	
+	var zebra = document.getElementById("zebraTxt").value;
+	var lungime1 = zebra.length;
+	var zebrisoara = zebra.toLowerCase();
+	var  galeata = document.getElementById("galeataTxt").value;
+	var lungime2 = galeata.length;
+	var galetusa = galeata.toLowerCase();
+	if (lungime1 != 0 && lungime2 != 0)
+	{
+		if (zebrisoara === "z" && galetusa === "g")
+		{
+			window.alert( "BRAVO ! AI RĂSPUNS CORECT! ");
+			window.location.href = "set5.html";
+		}
+		else 
+		{
+			window.alert("MAI ÎNCEARCĂ! HINT: APASĂ PE DIFUZOR!");
+		}
+	}
+	else 
+	{
+		window.alert("LITERA TREBUIE SCRISĂ ÎN CERCULEȚUL DE SUB IMAGINE!");
+	}
+	}
+</script>
+</body>
+</html>

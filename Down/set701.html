@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+<head>
+  <title>Prototype version 1.0 Logopedie</title>
+<style>
+ #tdl{padding-left:180px;
+ /*padding-right: 180px;*/}
+  #tdr{/*padding-left:180px;*/
+ padding-right: 180px;}
+   #td{/*padding-left:240px;*/
+ padding-right: 210px;}
+  #main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+ <body bgcolor="lightblue">
+ <script>
+ var ok1=0;
+ var ok2=0;
+ var ok3=0;
+
+ function checkIfCorrect()
+	{
+	
+	var o11 = document.getElementById("o11Img");
+	o11.onclick = function(e) {
+	var o7 = document.getElementById("o7Img");
+	o7.onclick = function(e) {
+	
+	o11.style.display='none';
+	o7.style.display='none';
+	ok1=1;
+	
+	if(ok1===1 && ok2===1 && ok3===1 )
+	{
+	
+	window.location.href = "set8.html";
+	}
+	}
+
+	}
+	
+		
+	
+	var o8 = document.getElementById("o8Img");
+	o8.onclick = function(e) {
+	var o10 = document.getElementById("o10Img");
+	o10.onclick = function(e) {
+	
+	
+	o8.style.display='none';
+	o10.style.display='none';
+
+	ok2=1;
+	if(ok1===1 && ok2===1 && ok3===1 )
+	{
+	
+	window.location.href = "set8.html"
+	}
+	}
+	}
+	
+	var o9 = document.getElementById("o9Img");
+	o9.onclick = function(e) {
+	var o12 = document.getElementById("o12Img");
+	o12.onclick = function(e) {
+	
+
+	o9.style.display='none';
+	o12.style.display='none';
+	
+	ok3=1;
+	if(ok1===1 && ok2===1 && ok3===1)
+	{
+	
+	window.location.href = "set8.html"
+	}
+	
+	}
+	
+	
+	
+	
+	}
+	 
+	}
+	
+   </script>
+   <div align="left">
+ <a href="index.html"><img src="arrow.png" height="50" width="70"></a>
+</div> 
+<div id="main">   
+<table border="0" cellpadding="1" cellspacing="1" height="300" width="300" align="center">
+<thead>
+  <center><h3>D&#259; click pe imaginile care con&#539;in no&#539;iuni opuse</h3></center>
+</thead>
+<tbody>       
+<tr>
+
+<td id="td" style="width: 200px"><img  id="o7Img" src="images/o7.png" width="200px" height="170px" onclick="checkIfCorrect()" ></td>
+
+<!--td id="td" style="width: 200px"></td-->
+<td style="width: 200px"><img  id="o8Img" src="images/o8.png"  width="200px" height="170px" onclick="checkIfCorrect()"></td>
+
+</tr>
+<tr>
+
+<td id="td" style="width: 200px"><img  id="o9Img" src="images/o9.png" width="200px" height="170px"  onclick="checkIfCorrect()"></td>
+<!--td id="td" style="width: 200px"></td-->
+<td style="width: 200px"><img  id="o10Img" src="images/o10.png"  width="200px" height="170px" onclick="checkIfCorrect()"></td>
+
+</tr>
+<tr>
+
+<td id="td" style="width: 200px"><img  id="o11Img" src="images/o11.png" width="200px" height="170px"  onclick="checkIfCorrect()"></td>
+<!--td id="td" style="width: 200px"></td-->
+<td style="width: 200px"><img  id="o12Img" src="images/o12.png" width="200px" height="170px"  onclick="checkIfCorrect()"></td>
+
+</tr>
+
+</tbody>
+</table>
+</div>
+ </body>
+ </html>
