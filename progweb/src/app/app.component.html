@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body class="body">
+        <div class="enunt" style="text-align:center">
+          <p *ngIf="update">Updated</p>
+          <h3>Colorează toate cerculețele din interiorul dreptunghiului</h3>
+        </div>
+        <div class="mainDiv">
+          <svg width="900" height="600">
+            <rect x="200" y="150" width="500" height="300" style="fill:rgb(173,216,230);stroke:black;stroke-width:3;opacity:1" />
+            <circle cx="170" cy="100" r="15" stroke="black" stroke-width="3" fill="white"  id="c1" [ngClass]="[BntStyle]"   (click)="onClickMeMsg()"/>
+            <circle cx="350" cy="130" r="15" stroke="black" stroke-width="3" fill="white" id="c2" [ngClass]="[BntStyle]"   (click)="onClickMeMsg()" />
+            <circle cx="700" cy="50" r="15" stroke="black" stroke-width="3" fill="white" id="c3"  [ngClass]="[BntStyle]"    (click)="onClickMeMsg()"/>
+            <circle cx="650" cy="200" r="15" stroke="black" stroke-width="3" fill="white" id="c4" [ngClass]="[BntStyle]"   (click)="onClickMe()"/>
+            <circle cx="300" cy="200" r="15" stroke="black" stroke-width="3" fill="white" id="c5"  [ngClass]="[BntStyle]"  (click)="onClickMe()"/>
+            <circle cx="450" cy="300" r="15" stroke="black" stroke-width="3" fill="white" id="c6"  [ngClass]="[BntStyle]"   (click)="onClickMe()"/>
+            <circle cx="300" cy="400" r="15" stroke="black" stroke-width="3" fill="white" id="c7" [ngClass]="[BntStyle]"   (click)="onClickMe()"/>
+            <circle cx="600" cy="430" r="15" stroke="black" stroke-width="3" fill="white" id="c8"  [ngClass]="[BntStyle]"   (click)="onClickMe()"/>
+            <circle cx="50" cy="550" r="15" stroke="black" stroke-width="3" fill="white" id="c9"  [ngClass]="[BntStyle]"  (click)="onClickMeMsg()"/>
+            <circle cx="500" cy="500" r="15" stroke="black" stroke-width="3" fill="white" id="c10" [ngClass]="[BntStyle]"  (click)="onClickMeMsg()"/>
+            <circle cx="850" cy="550" r="15" stroke="black" stroke-width="3" fill="white" id="c11" [ngClass]="[BntStyle]"  (click)="onClickMeMsg()"/>
+            <circle cx="120" cy="330" r="15" stroke="black" stroke-width="3" fill="white" id="c12" [ngClass]="[BntStyle]"   (click)="onClickMeMsg()"/>
+            <circle cx="800" cy="330" r="15" stroke="black" stroke-width="3" fill="white" id="c13" [ngClass]="[BntStyle]"  (click)="onClickMeMsg()"/>
+          </svg> 
+        </div>
+        </body>
+</html>
